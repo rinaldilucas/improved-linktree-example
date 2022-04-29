@@ -1,0 +1,14 @@
+{{#extend "layouts/base" 
+    base="./"
+    page="home" 
+    language=language
+    country=country
+    full=domain
+    title=page-title 
+    description=description
+    keywords=keywords
+}}
+    {{#content "body"}}
+        {{> pages/home }}
+    {{/content}}
+{{/extend}}

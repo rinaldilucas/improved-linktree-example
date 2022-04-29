@@ -1,0 +1,46 @@
+{
+    "author": "Rinaldi Lucas",
+    "favicon": false,
+    "thumb": false,
+    "page-title": "Website Title — Commercial Hub",
+    "search-description": "Website site description.",
+    "picture": "https://via.placeholder.com/300x300",
+    "background": "https://storage.googleapis.com/subtlepatterns-production/designers/subtlepatterns/uploads/black_denim.png",
+    "title": "Website Title",
+    "description": "Website Description",
+    "upper-bar": "Liked this linktree example? <a target=\"_blank\" class=\"home__strip-link\" href=\"https://github.com/rinaldilucas/improved-linktree-example#donations\">Buy me a coffee!</a>",
+    "domain": "https://rinaldilucas.github.io/improved-linktree-example/",
+    "language": "en-US",
+    "country": "us",
+    "keywords": "tag1, tag2, tag3",
+    "email": "mailto:mail@gmail.com",
+    "main-link": "https://github.com/rinaldilucas",
+    "main-contact": "mailto:mail@gmail.com",
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31760200.151711054!2d-69.69459156588027!3d-13.659128539950737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrazil!5e0!3m2!1sen!2sbr!4v1647905715083!5m2!1sen!2sbr",
+    "map-link": "https://goo.gl/maps/UtbytzqCWNdwVdpY6",
+    "buttons": [
+        {
+            "text": "Phone",
+            "link": "tel:43999999999",
+            "icon": "phone"
+        },
+        {
+            "text": "Whatsapp",
+            "link": "https://api.whatsapp.com/send?phone=5543999999999",
+            "icon": "whatsapp",
+            "brand": "true"
+        },
+        {
+            "text": "Facebook",
+            "link": "https://www.facebook.com/brand/",
+            "icon": "facebook",
+            "brand": "true"
+        },
+        {
+            "text": "Instagram",
+            "link": "https://www.instagram.com/brand/",
+            "icon": "instagram",
+            "brand": "true"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "Create media": {
+        "scope": "scss,sass",
+        "prefix": "media",
+        "body": ["@include media(\"$1\") {", "$2", "}"],
+        "description": "Include directive for scss media wrapper"
+    }
+}

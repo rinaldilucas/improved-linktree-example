@@ -1,0 +1,38 @@
+<div class="home">
+    {{#if infos.upper-bar}}
+        <div class="home__strip">
+            <h6 class="home__strip-text">{{{infos.upper-bar}}}</h6>
+        </div>
+    {{/if}}
+    <div class="home__wrapper {{#unless infos.upper-bar}} home__wrapper--no-margin {{/unless}}">
+        {{#if infos.map}}
+            <div class="home__map">
+                {{#if infos.map-link}}
+                    <a target="_blank" href="{{infos.map-link}}" class="home__map-button">📍 open map</a>
+                {{/if}}
+                <iframe src="{{infos.map}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="footer__wave"></div>
+            </div>
+        {{/if}}
+        <div class="home__user {{#unless infos.map}} home__user--no-margin {{/unless}}">
+            <a class="home__user-picture" target="_blank" href="{{infos.main-link}}">
+                <img data-bypass-load-image src="{{infos.picture}}" />
+            </a>
+            <div class="home__user-container">
+                {{#if infos.description}}
+                    <a target="_blank" class="home__user-text" href="{{infos.main-contact}}">{{infos.description}}</a>
+                {{/if}}
+                <a target="_blank" class="home__user-title" href="{{infos.main-link}}">{{infos.title}}</a>
+            </div>
+        </div>
+
+        <div class="home__buttons-wrapper">
+            {{#each infos.buttons}}
+                <a target="_blank" class="home__buttons" href="{{link}}">
+                    {{#if icon}}<i class="icon {{#if brand}}fab{{else}}fa{{/if}} fa-{{icon}}"></i>{{/if}}
+                    {{text}}
+                </a>
+            {{/each}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+    "search.exclude": {
+        "develop": true,
+        "docs": true,
+        "package-lock.json": true,
+        "node_modules": true,
+        "yarn.lock": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "html.format.enable": true,
+    "files.associations": {
+        "*.hbs": "handlebars"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
+}

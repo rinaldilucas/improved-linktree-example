@@ -1,0 +1,17 @@
+
+{
+    "indent_handlebars": true,
+    "max_preserve_newlines": 2,
+    "end_with_newline": true,
+    "indent_size": 4,
+    "indent_with_tabs": false,
+    "indent_inner_html": true,
+    "wrap_attributes": "preserve",
+    "wrap_attributes_indent_size": 5,
+    "newline_between_rules": true,
+    "selector_separator_newline": true,
+    "space_around_combinator": true,
+    "extra_liners": [
+        "body"
+    ]
+}

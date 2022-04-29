@@ -1,0 +1,18 @@
+.icon {
+    font-size: vw(36);
+    font-style: normal;
+    margin: 0 vw(24) 0 0;
+    display: inline-block;
+    background: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+
+    &--small {
+        width: vw(32);
+        height: vw(32);
+    }
+
+    &--envelope {
+        background-image: url(../images/icons/envelope.svg);
+    }
+}
