@@ -1,0 +1,23 @@
+[tabindex]:focus {
+    box-shadow: 0 0 0 vw(6) $yellow !important;
+    outline: none !important;
+}
+
+a:focus,
+input:focus,
+select:focus,
+button:focus,
+textarea:focus,
+a[tabindex]:focus,
+input[tabindex]:focus,
+select[tabindex]:focus,
+button[tabindex]:focus,
+textarea[tabindex]:focus {
+    box-shadow: 0 0 0 vw(4) $yellow !important;
+    outline: none !important;
+
+    &.contrast {
+        box-shadow: 0 0 0 vw(4) $yellow !important;
+        outline: none !important;
+    }
+}
