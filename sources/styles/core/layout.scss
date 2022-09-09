@@ -1,0 +1,95 @@
+/* ============================================== */
+/* =================== layout =================== */
+/* ============================================== */
+
+html {
+    font-size: mobile-vw($pixel-base, true);
+
+    @include media(">=desktop") {
+        font-size: desktop-vw($pixel-base, true);
+    }
+
+    @include media(">common-desktop") {
+        font-size: desktop-fixed($pixel-base, $size-common-desktop);
+    }
+
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    height: auto;
+    font-size: vw(12);
+    font-family: $font-main;
+    width: 100%;
+    max-width: 100vw;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.075);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+#main {
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    audio {
+        visibility: hidden;
+    }
+
+    *:focus {
+        outline: 2px dashed $outline;
+        outline-offset: 2px;
+    }
+}
+
+#site-content {
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    z-index: 2;
+
+    .on-loaded & {
+        opacity: 1;
+    }
+}
+
+#site-footer {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: vw(10);
+}
+
+::-webkit-scrollbar-track {
+    background: $onix-strong;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $ice-light;
+    border-radius: 99px;
+}

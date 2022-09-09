@@ -1,0 +1,33 @@
+.button {
+    width: 100%;
+    height: vw(80);
+    font-size: vw(26);
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: vw(2.5);
+    font-weight: 500;
+    background: $onix-strong;
+    border-radius: vw(25);
+    box-shadow: 0 vw(8) vw(15) #0000008a;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 vw(24) 0;
+
+    @include media(">desktop") {
+        font-size: vw(16);
+    }
+
+    &:hover {
+        color: $white;
+        background: $button-hover;
+        box-shadow: 0 vw(15) vw(20) #00000014;
+        transform: translateY(vw(-7));
+    }
+
+    &:last-child {
+        margin: 0;
+    }
+}

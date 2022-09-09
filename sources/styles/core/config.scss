@@ -1,0 +1,55 @@
+/* ============================================== */
+/* =================== fonts ==================== */
+/* ============================================== */
+
+$font-main: "Montserrat",
+sans-serif;
+
+
+/* ============================================== */
+/* =================== colors =================== */
+/* ============================================== */
+
+$default: $white;
+
+$primary: $onix-strong;
+$primary-hover: $onix;
+$secondary: $white;
+
+$button: $blue-strong-alt;
+$button-hover: $gray;
+
+$secondary: $blue;
+$secondary-hover: $blue-strong;
+
+$background: $white;
+$background-primary: $blue;
+$background-secondary: $black;
+
+$border: $gray;
+$border-primary: $primary;
+$border-secondary: $secondary;
+
+$outline: $gray-light;
+
+$transition-time: 0.3s;
+$transition-time-function: ease-in-out;
+
+
+/* ============================================== */
+/* ================ dimensions  ================= */
+/* ============================================== */
+
+$layout-desktop: 1920px;
+$layout-desktop-height: 930px;
+$layout-desktop-original: null;
+
+$layout-mobile: 640px;
+$layout-mobile-height: 960px;
+$layout-mobile-original: null;
+
+$layout-tablet: 768px;
+$layout-tablet-height: 720px;
+$layout-tablet-original: null;
+
+$mobile-factor: 1;

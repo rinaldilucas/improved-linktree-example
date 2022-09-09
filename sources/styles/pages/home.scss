@@ -1,0 +1,193 @@
+.home {
+    min-height: calc(100vh - 1.6rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__strip {
+        position: absolute;
+        top: 0;
+        z-index: 5;
+        background-color: $onix-strong;
+        width: 100%;
+
+        &-text {
+            color: $white;
+            padding: vw(14) 0;
+            font-size: vw(20);
+            text-align: center;
+            font-weight: 400;
+            margin: 0;
+            height: vw(45);
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 1px;
+
+            @include media(">desktop") {
+                font-size: vw(18);
+                height: vw(52);
+            }
+        }
+
+        &-link {
+            color: $white;
+            text-align: center;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+
+    &__map {
+        height: vw(280);
+        width: 100vw;
+        left: 0;
+        right: 0;
+        background-color: $onix;
+        position: absolute;
+        z-index: 1;
+
+        &-button {
+            position: absolute;
+            left: vw(20);
+            top: vw(18);
+            background-color: $white;
+            font-size: vw(22);
+            opacity: 1;
+            z-index: 5;
+            font-weight: bold;
+            color: $onix;
+            padding: vw(10) vw(30) vw(10) vw(20);
+            border-radius: vw(10);
+
+            @include media(">desktop") {
+                font-size: vw(18);
+                left: auto;
+                right: vw(40);
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            opacity: 0.45;
+        }
+    }
+
+    &__wrapper {
+        max-width: vw(550);
+        width: 100%;
+        margin: vw(45) 0 0 0;
+
+        @include media(">desktop") {
+            max-width: vw(800);
+            margin: vw(52) 0 0 0;
+        }
+
+        &--no-margin {
+            margin: 0;
+        }
+    }
+
+    &__user {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: vw(170) 0 0;
+        position: relative;
+        z-index: 2;
+        height: vw(200);
+
+        @include media(">desktop") {
+            height: vw(320);
+            margin: vw(120) 0 0;
+        }
+
+        &--no-margin {
+            margin: vw(80) 0 0;
+        }
+
+        &-picture {
+            img {
+                border-radius: 100%;
+                width: vw(200);
+                height: vw(200);
+                border: $white solid 6px;
+                box-sizing: border-box;
+                background-color: $white;
+
+                @include media(">desktop") {
+                    width: vw(300);
+                    height: vw(300);
+                }
+            }
+        }
+
+        &-container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-left: vw(45);
+            position: relative;
+            width: calc(100% - 0.45rem);
+
+            @include media(">desktop") {
+                margin-left: vw(50);
+            }
+        }
+
+        &-text {
+            color: $white;
+            font-size: vw(20);
+            line-height: vw(22);
+            font-weight: bold;
+            letter-spacing: vw(2);
+            background-color: $onix;
+            border-radius: vw(8);
+            padding: vw(10) vw(24);
+            bottom: vw(105);
+            position: absolute;
+            word-break: break-word;
+
+            @include media(">desktop") {
+                bottom: vw(175);
+            }
+        }
+
+        &-title {
+            color: $white;
+            font-size: vw(28);
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: vw(2);
+            width: vw(300);
+            text-align: left;
+            position: absolute;
+            top: vw(140);
+            left: vw(7);
+
+            @include media(">desktop") {
+                width: 100%;
+                font-size: vw(36);
+                top: vw(200);
+            }
+        }
+    }
+
+    &__buttons-wrapper {
+        text-align: center;
+        clear: both;
+        margin: vw(60) 0;
+
+        @include media(">desktop") {
+            margin: vw(90) 0 vw(45);
+        }
+    }
+
+    &__buttons {
+        @extend .button;
+    }
+}

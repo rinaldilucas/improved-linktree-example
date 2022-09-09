@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    margin: vw(25) 0 vw(45) 0;
+
+    &__anchor {
+        @extend .button;
+        border-radius: vw(60);
+        padding: vw(2) vw(45);
+        font-size: vw(14);
+        letter-spacing: vw(2);
+        line-height: vw(30);
+        width: auto;
+    }
+}

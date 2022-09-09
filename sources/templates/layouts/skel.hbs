@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{language}}" itemscope="" itemtype="https://schema.org/WebPage">
+
+    <head>
+        {{!-- GENERAL PROPS --}}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="content-Security-Policy" content="upgrade-insecure-requests">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0, user-scalable=no, shrink-to-fit=no">
+
+        <base href="{{base}}" id="base-id">
+        <link rel="canonical" href="{{full}}">
+        <link rel="icon" href="{{#if favicon}}{{favicon}}{{else}}./assets/images/favicon/favicon.ico{{/if}}">
+
+        <title>{{title}}</title>
+        <meta name="title" content="{{title}}">
+        <meta name="description" content="{{search-description}}">
+        <meta name="keywords" content="{{keywords}}">
+        <meta name="date" content="{{date}}">
+        <meta name="sitecode" content="{{country}}">
+        <meta name="version" content="{{version}}">
+        <meta name="google-site-verification" content="">
+        {{!-- /GENERAL PROPS --}}
+
+        {{!-- SHARE PROPS --}}
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="{{author}}">
+        <meta name="twitter:url" content="{{full}}">
+        <meta name="twitter:title" content="{{title}}">
+        <meta name="twitter:description" content="{{search-description}}">
+        <meta name="twitter:image" content="{{#if thumb}}{{thumb}}{{else}}./assets/images/thumb/thumb.jpg{{/if}}">
+
+        <meta property="og:url" content="{{full}}">
+        <meta property="og:image" content="{{#if thumb}}{{thumb}}{{else}}./assets/images/thumb/thumb.jpg{{/if}}" />
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="{{title}}">
+        <meta property="og:locale" content="{{language}}">
+        <meta property="og:title" content="{{title}}">
+        <meta property="og:description" content="{{search-description}}">
+        <meta property="og:country-name" content="{{country}}" />
+
+        <meta itemprop="name" content="{{title}}">
+        <meta itemprop="image" content="{{#if thumb}}{{thumb}}{{else}}./assets/images/thumb/thumb.jpg{{/if}}">
+        <meta itemprop="url" content="{{full}}">
+        <meta itemprop="description" content="{{search-description}}">
+        <meta itemprop="keywords" content="{{keywords}}">
+        {{!-- /SHARE PROPS --}}
+
+        {{!-- STYLES --}}
+        <link rel="stylesheet" href="./assets/styles/fonts.css" />
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        {{!-- /STYLES --}}
+
+        {{!-- SCRIPTS --}}
+        <script type="text/javascript" defer src="./assets/scripts/main.js"></script>
+        {{!-- /SCRIPTS --}}
+
+        {{!-- METRICS --}}
+        {{>layouts/metrics}}
+        {{!-- /METRICS --}}
+    </head>
+
+    <body id="main" style="background: url({{background}})" class="{{page}}">
+        {{> layouts/metrics-fallback }}
+
+        {{#block "header"}}
+            {{!-- {{> elements/header }} --}}
+        {{/block}}
+
+        {{#block "content"}}
+            <span></span>
+        {{/block}}
+
+        {{#block "footer"}}
+            {{> elements/footer }}
+        {{/block}}
+
+        {{> elements/loading }}
+    </body>
+</html>
