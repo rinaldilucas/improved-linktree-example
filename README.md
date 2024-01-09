@@ -184,7 +184,7 @@ It helps me a lot to continue developing open source codes.
 
 -   Metamask (USDT):
     ```sh
-    0xA0410641515F06fF6a9AdAFf1c3e90a3905ba271
+    0x16362DF7f963CeEBB2114B467B68F5A58972ee65
     ```
 -   PIX (BRL):
     ```sh
