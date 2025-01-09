@@ -60,7 +60,7 @@
   [![Project Screenshot][project-screenshot]](https://rinaldilucas.github.io/improved-linktree-example/)
 </div>
 
-There are many great linktrees examples available on Internet, however, I didn't find one that really suited my need, so I created this enhanced one using stacks that I wanted to practice. This is actually the sum of all my learning right now. If this project helped you in any way, don't hesitate to leave a star!
+There are many great link tree examples available on the Internet, however, I didn't find one that suited my needs, so I created this enhanced one using stacks that I wanted to practice. This is the sum of all my learning right now. If this project helped you in any way, don't hesitate to leave a star!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -138,7 +138,7 @@ _For convenience, I put the data.json in the root of the project._
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -180,7 +180,7 @@ Project Link: [https://github.com/rinaldilucas/improved-linktree-example](https:
 ## Donations
 
 If you feel that this project has helped you in any way, whether it's attracting clients or teaching you about the technologies used, feel free to make a donation.
-It helps me a lot to continue developing open source codes.
+It helps me a lot to continue developing open-source codes.
 
 -   Metamask (USDT):
     ```sh
